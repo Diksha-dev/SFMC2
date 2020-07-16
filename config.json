@@ -30,6 +30,7 @@
         }
     },
     "configurationArguments": {
+         "applicationExtensionKey": "bc18ae66-8f0d-41b7-91d3-a18186e3f889",
        "save": {
            "url": "https://test-appdiksha.herokuapp.com/activity/save"
        },
