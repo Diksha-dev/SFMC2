@@ -14,12 +14,12 @@ var app = express();
 // Configure Express
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.raw({type: 'application/jwt'}));
-//app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-//app.use(express.methodOverride());
-//app.use(express.favicon());
+app.use(express.methodOverride());
+app.use(express.favicon());
 
-a
+
 
 // Express in Development Mode
 if ('development' == app.get('env')) {
@@ -29,10 +29,10 @@ if ('development' == app.get('env')) {
 
 
 // Custom Hello World Activity Routes
-app.post('/activity/save );
-app.post('/activity/validate);
-app.post('/activity/publish );
-app.post('/activity/execute );
+app.post('/activity/save');
+app.post('/activity/validate');
+app.post('/activity/publish' );
+app.post('/activity/execute' );
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
